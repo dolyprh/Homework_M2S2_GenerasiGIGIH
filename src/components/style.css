@@ -1,0 +1,55 @@
+.container{
+    color: #fff;
+}
+.playlist-content, .song-header-container {
+    list-style-type: none;
+    border-bottom: 1px solid #666;
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+.playlist-content:hover{
+    background-color: #666;
+    border-radius: 0 0 15px 15px;
+
+}
+.song-header-container{
+    background-color: rgb(34, 34, 34);
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}  
+.playlist-item img{
+    width: 80px;
+    border-radius: 5px;
+}
+.playlist-item{
+    padding: 12px 0 12px 0;
+}
+.playlist-content .btn-play{
+    padding-top: 40px;
+}
+.btn-play button{
+    background-color: rgb(51, 223, 51);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.playlist-item, 
+.song-poster-header,
+.song-title-header,
+.song-album-header,
+.song-artist-header,
+.song-length-header{
+    width: 200px;
+    text-align: center;
+}
+
+.playlist-item p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

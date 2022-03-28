@@ -2,13 +2,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  background-color: rgb(10, 10, 10);
 }
 
 .App {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background: rgb(51, 51, 51);
   min-height: 100vh;
 }
 .img{
