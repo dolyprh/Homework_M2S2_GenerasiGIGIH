@@ -1,5 +1,4 @@
 import Track from "../components/content";
-
 const DataTrack = () => {
 const DATA_TRACK = [
     {

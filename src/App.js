@@ -1,12 +1,14 @@
 import React from 'react';
-import DataTrack from './data/index'
+import SpotifyAPI from './components/spotifyAPI';
 import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1 className="header-content">Playlist</h1>
-      <DataTrack />
+      <header className='header'>
+        <h1 className="header-content">Playlist</h1>
+      </header>
+      <SpotifyAPI />
     </div>
   );
 }

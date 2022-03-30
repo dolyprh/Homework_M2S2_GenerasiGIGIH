@@ -3,7 +3,7 @@
 }
 .playlist-content, .song-header-container {
     list-style-type: none;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid rgb(63, 62, 62);
     display: flex;
     font-size: 14px;
     cursor: pointer;
@@ -11,7 +11,6 @@
   }
 .playlist-content:hover{
     background-color: #666;
-    border-radius: 0 0 15px 15px;
 
 }
 .song-header-container{
@@ -22,11 +21,19 @@
     font-family: sans-serif;
 }  
 .playlist-item img{
-    width: 80px;
+    width: 200px;
     border-radius: 5px;
 }
 .playlist-item{
     padding: 12px 0 12px 0;
+}
+.header {
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+a{
+    color: #fff;
 }
 .playlist-content .btn-play{
     padding-top: 40px;
@@ -50,6 +57,6 @@
 
 .playlist-item p{
     font-family: sans-serif;
-    font-size: 14px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    font-family:Impact;
 }
