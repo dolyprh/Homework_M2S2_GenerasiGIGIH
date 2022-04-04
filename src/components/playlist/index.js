@@ -18,15 +18,16 @@ export default function SpotifyGetPlaylist() {
     axios
         .get(playList_END, {
             headers: {
-                Authorization: `Bearer ${token}`            },
+                Authorization: `Bearer ${token}`            
+            },
         })
         .then((response) => {
             setData(response.data);
         })    
         .catch((error) => {
             console.log(error)
-        })
-    }
+        });
+    };
 
   return (
     <div>

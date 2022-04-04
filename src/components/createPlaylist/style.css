@@ -1,0 +1,30 @@
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .create label {
+    text-align: left;
+    display: block;
+  }
+
+  .create input, textarea {
+    width: 320px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 20px;
+  }
+  .create button {
+    background: rgb(56, 225, 56);
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  

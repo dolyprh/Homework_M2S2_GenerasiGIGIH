@@ -25,8 +25,8 @@
     margin-right: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-button{
-    padding: 10px 20px;
+button, a{
+    padding: 8px 20px;
     color: white;
     background-color: rgb(56, 225, 56);
     border-radius: 20px;
@@ -34,6 +34,10 @@ button{
     font-size: 16px;
     border: none;
     margin-top: 10px;
+    text-decoration: none;
+}
+.btn-logout{
+    background-color: rgb(255, 43, 43);
 }
 .song-header-container{
     background-color: rgb(34, 34, 34);
@@ -79,5 +83,5 @@ a{
 
 .playlist-item p{
     font-family: sans-serif;
-    font-size: 28px;
+    font-size: 18px;
 }

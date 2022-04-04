@@ -1,6 +1,6 @@
 import React from 'react';
-import SpotifyAPI from './components/spotifyAPI';
-import SpotifyGetTrack from './components/getTrack/spotifyGetTrack';
+import SpotifyAPI from './api/spotifyAPI';
+import SpotifyGetPlaylist from './components/playlist/index';
 import './App.css'
 
 function App() {
