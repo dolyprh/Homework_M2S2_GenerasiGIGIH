@@ -3,7 +3,7 @@ import '../style.css'
 
 export default function Track(props) {
   console.log("data : ", props.dataResult);
-
+  
   const [select, setSelected] = useState([])
 
   const handleSelected = (URI) => {

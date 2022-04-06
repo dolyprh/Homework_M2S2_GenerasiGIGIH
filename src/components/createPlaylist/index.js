@@ -46,6 +46,7 @@ export default function CreatePlaylist() {
     }
   };
 
+
   return (
     <div className='create'>
       <form className='form-create-playlist'>
@@ -66,6 +67,13 @@ export default function CreatePlaylist() {
           onChange={(e) => setDescribe(e.target.value)}
         />
         <button onClick={handleCreatePlaylist}>Create Playlist</button>
+        
+        <div className='container'>
+          <div className='result-playlist'>
+            <p>{title}</p>
+            <p>{describe}</p>
+          </div>
+        </div>
       </form>
     </div>
   )

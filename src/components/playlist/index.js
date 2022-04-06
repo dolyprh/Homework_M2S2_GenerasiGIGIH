@@ -12,7 +12,7 @@ export default function SpotifyGetPlaylist() {
       if(localStorage.getItem("accessToken")) {
           setToken(localStorage.getItem("accessToken"));
       }
-  }, []);
+  });
 
   const handleClick = () => {
     axios
@@ -20,9 +20,9 @@ export default function SpotifyGetPlaylist() {
             headers: {
                 Authorization: `Bearer ${token}`            
             },
-        })
+        }, [])
         .then((response) => {
-            setData(response.data);
+            setData(response.data.item);
         })    
         .catch((error) => {
             console.log(error)
@@ -31,7 +31,7 @@ export default function SpotifyGetPlaylist() {
 
   return (
     <div>
-        <button onClick={handleClick}>Get Playlist</button>
+        <button onClick={handleClick}>Lihat Playlist</button>
         {data?.items ? data.items.map((item) => {
             return(
             <div className="container" key={item.id}>

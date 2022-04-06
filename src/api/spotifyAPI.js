@@ -4,6 +4,9 @@ import '../components/style.css'
 import Track from '../components/Track'
 import SpotifyGetPlaylist from '../components/playlist'
 import CreatePlaylist from '../components/createPlaylist'
+import { setToken } from '../store/token'
+import { useSelector, useDispatch } from 'react-redux'
+
 
 export default function SpotifyAPI() {
 
@@ -12,7 +15,8 @@ export default function SpotifyAPI() {
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
 
-  const [token, setToken] = useState("");
+  const token = useSelector((state) => state.token.value);
+//   const [token, setToken] = useState("");
   const [search, setSearch] = useState("")
   const [result, setResult] = useState([])
 
@@ -69,6 +73,7 @@ export default function SpotifyAPI() {
 
                 : <h2>Please login</h2>
             }
+            <SpotifyGetPlaylist />
             <CreatePlaylist />
             <Track dataResult={result}/>
 
