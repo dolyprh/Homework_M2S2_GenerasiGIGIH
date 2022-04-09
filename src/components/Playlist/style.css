@@ -1,0 +1,18 @@
+.card-playlist{
+    display: flex;
+}
+.playlist-item{
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn-select{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(78, 245, 56);
+}

@@ -1,13 +1,15 @@
 import React from 'react';
-import SpotifyAPI from './api/spotifyAPI';
-import SpotifyGetPlaylist from './components/playlist/index';
+import SpotifyPages from './pages/home';
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
-        <SpotifyAPI />
-      </div>
+    <div className="App-header">
+      <header>
+        <h1>Sportify</h1>
+        <SpotifyPages />
+      </header>
+    </div>
   );
 }
 
