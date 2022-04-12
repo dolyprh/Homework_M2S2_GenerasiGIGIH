@@ -3,12 +3,15 @@ import SearchBar from "../../components/SearchBar/searchBar";
 import Playlist from "../../components/Playlist/playlist";
 import PlaylistItem from "../../components/CreatePlaylist/CreatePlaylist";
 import { login } from '../../redux/authSlice';
+import { GetUserSpotify } from "../../auth/spotifyAPI";
+import { useDispatch } from "react-redux";
 
 function CreatePlaylist() {
   const [tracks, setTracks] = useState([]);
   const [isSearch, setIsSearch] = useState(false);
   const [selectedTrackURI, setSelectedTrackURI] = useState([]);
   const [selectedTracks, setSelectedTracks] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.hash);
