@@ -1,8 +1,13 @@
-
-.form-input-playlist input, textarea {
-    display:block;
+.container-create{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    grid-area: create;
+}
+.form-input-playlist input, textarea{
+    display:flex;
     margin: 20px 0;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     border-radius: 20px;
     border: none;

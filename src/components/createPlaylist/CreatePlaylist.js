@@ -46,7 +46,7 @@ export default function PlaylistItem({ uris }) {
   };
 
   return (
-    <div className="container">
+    <div className="container-create">
         <h3>Create Playlist</h3>
         <form className="form-input-playlist" onSubmit={handleSubmit}>
           <input

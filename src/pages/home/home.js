@@ -7,7 +7,7 @@ import PlaylistItem from "../../components/CreatePlaylist/CreatePlaylist";
 import { login } from '../../redux/authSlice';
 import { useDispatch, useSelector } from "react-redux";
 import React from 'react'
-import './style.css'
+// import './style.css'
 
 function SpotifyPages() {
   const [tracks, setTracks] = useState([]);

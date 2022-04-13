@@ -9,23 +9,19 @@ function Playlist({url, title, artist, toggleSelect, album}) {
     };
 
     return (
-        <div className='card-playlist'>
-            <div className='playlist-item'>
-                <img src={url} alt={title} />
-            </div>
-            <div className='playlist-item'>
-                <h3>{title}</h3>
-            </div>
-            <div className='playlist-item'>
-                <p>{artist}</p>
-            </div>
-            <div className='playlist-item'>
-                <p>{album}</p>
-            </div>
-            <div className='playlist-item'>
-                <button className="btn-select" onClick={handleSelect}>
-                    {isSelected ? "Deselect" : "Select"}
-                </button>            
+        <div className='container'>
+            <div className='card-playlist'>
+                <div className='playlist-item-img'>
+                    <img src={url} alt={title} />
+                </div>
+                <div className='playlist-item-decs'>
+                    <span>{title}</span>
+                    <p>{artist}</p>
+                    <p>{album}</p>
+                    <button className="btn-select" onClick={handleSelect}>
+                        {isSelected ? "Deselect" : "Select"}
+                    </button>            
+                </div>
             </div>
             
         </div>
