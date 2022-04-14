@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import { CreatePlaylist, addTrackToPlaylist } from "../../auth/spotifyAPI";
 import './style.css'
-
+import { Stack, Textfield } from "@mui/material";
 import React from 'react'
 
 export default function PlaylistItem({ uris }) {
@@ -50,6 +50,9 @@ export default function PlaylistItem({ uris }) {
         <h3>Create Playlist</h3>
         <form className="form-input-playlist" onSubmit={handleSubmit}>
           <input
+            aria-label="empty textarea"
+            placeholder="Input"
+            maxRow={4}
             type="text"
             name="title"
             id="title"
@@ -59,6 +62,9 @@ export default function PlaylistItem({ uris }) {
           />
 
           <textarea
+            aria-label="empty textarea"
+            placeholder="Description"
+            maxRow={4}
             name="description"
             id="desc"
             value={playlist.description}

@@ -7,7 +7,18 @@ import PlaylistItem from "../../components/CreatePlaylist/CreatePlaylist";
 import { login } from '../../redux/authSlice';
 import { useDispatch, useSelector } from "react-redux";
 import React from 'react'
-// import './style.css'
+import './style.css'
+import { experimentalStyled as styled } from "@mui/material";
+import { Box, Paper, Grid } from "@mui/material";
+
+const Item = styled(Paper)(({ theme }) => ({
+    display: "grid",
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
 
 function SpotifyPages() {
   const [tracks, setTracks] = useState([]);
@@ -96,23 +107,24 @@ function SpotifyPages() {
             <div className="content-spotify">
                 <SearchBar onSuccess={(tracks) => handleSearch(tracks)} />
                 <PlaylistItem uris={selectedTrackURI} className="playlist-form"/>
-
             </div>
 
                 {tracks.length === 0 && <p>No tracks</p>}
 
-                <div className="track-list">
-                    {tracks.map((track) => (
-                        <Playlist
-                            key={track.id}
-                            url={track.album.images[2].url}
-                            title={track.name}
-                            artist={track.artists[0].name}
-                            album={track.album.name}
-                            toggleSelect={() => toggleSelect(track)}
-                        />
-                    ))}
-                </div>
+                <Box className="track-list" sx={{ flexGrow: 1 }} >
+                    <Item container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                        {tracks.map((track) => (
+                            <Playlist
+                                key={track.id}
+                                url={track.album.images[2].url}
+                                title={track.name}
+                                artist={track.artists[0].name}
+                                album={track.album.name}
+                                toggleSelect={() => toggleSelect(track)}
+                            />
+                        ))}
+                    </Item>
+                </Box>
         </>
         )
 

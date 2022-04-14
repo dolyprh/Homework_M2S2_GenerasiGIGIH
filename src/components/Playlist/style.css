@@ -1,16 +1,7 @@
-.container{
-    margin: 0 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas:"card card-playlist";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
 .card-playlist{
     grid-area: card;
     display: flex;
-    margin: 50px auto;
+    margin: 20px 10px auto;
     padding: 10px;
     background-color: rgb(62, 62, 62);
     border-radius: 10px;

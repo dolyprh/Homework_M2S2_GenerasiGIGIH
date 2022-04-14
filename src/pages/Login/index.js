@@ -5,6 +5,8 @@ import { login } from "../../redux/authSlice";
 import { useHistory } from 'react-router-dom'
 import { useEffect } from "react";
 import React from 'react';
+import { Link } from "@mui/material";
+import { Box } from "@mui/material";
 
 export default function LoginApp() {
 
@@ -41,9 +43,34 @@ export default function LoginApp() {
     }
 
   return (
-    <div className="login-spotify">
-        <p>Click Login to Using Spotify</p>
-        <a href={getSpotifyLogin()}>Login</a>
+    <div>
+        <Box 
+            component="span"
+            sx={{
+            visibility: 'visible',
+            my: 2,
+            p: 1,
+            mx: "auto",
+            justifyContent:"center",
+            alignItems:"center",
+            bgcolor: (theme) =>
+                theme.palette.mode === 'dark' ? '#101010' : 'greenligth',
+            color: (theme) =>
+                theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+            border: '1px solid',
+            borderColor: (theme) =>
+                theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+            borderRadius: 20,
+            fontSize: '0.875rem',
+            fontWeight: '700',
+            }}
+        >
+            <Link href={getSpotifyLogin()}
+                variant="body1"
+                underline="none">
+                    
+            Login</Link>
+        </Box>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { searchTrack } from '../../auth/spotifyAPI'
 import { useSelector } from 'react-redux'
 import './style.css'
+import { Button, TextField } from '@mui/material'
 
 export default function SearchBar({ onSuccess }) {
   const accessToken = useSelector((state) => state.auth.accessToken);
@@ -23,12 +24,18 @@ export default function SearchBar({ onSuccess }) {
         <form className='form-Input-Search' onSubmit={(e) => handleSubmit(e) } >
             <div className='container-searchBar'>
               <h3>Search Playlist</h3>
-               <input 
+               <TextField
+                    id="filled-search"
+                    variant="filled"
+
                     type="text"
                     name="query"
                     onChange={e => setSearch(e.target.value) }
                />
-               <input type="submit" className='btn-search' value="search" /> 
+               <Button sx={{ borderRadius:20, background:"rgb(78, 245, 56)"}} 
+                variant="contained" 
+                type="submit" 
+                >Search</Button> 
             </div>
         </form>
     </div>
