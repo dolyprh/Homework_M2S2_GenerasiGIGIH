@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import SearchBar from "../../components/SearchBar/searchBar";
+import SearchBar from "../../components/SearchBar/index.tsx";
 import Playlist from "../../components/Playlist/playlist";
 import PlaylistItem from "../../components/CreatePlaylist/CreatePlaylist";
 import { login } from '../../redux/authSlice';
