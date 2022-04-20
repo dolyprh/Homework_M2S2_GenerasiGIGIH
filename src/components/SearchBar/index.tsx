@@ -5,9 +5,6 @@ import { TRootState } from '../../redux/store'
 import './style.css'
 import { Button, TextField } from '@mui/material'
 
-// export default function SearchBar({ onSuccess }) {
-//   const accessToken = useSelector((state) => state.auth.accessToken);
-//   const [search, setSearch] = useState('')
 
 interface Props {
   onSuccess:  (tracks: any[]) => void;
@@ -37,13 +34,13 @@ interface Props {
   return (
     <div>
         {/* <form className='form-Input-Search' onSubmit={(e) => handleSubmit(e) } > */}
-        <form className='form-Input-Search' onSubmit={ handleSubmit }>  
+        <form data-testid="SearchBar" className='form-Input-Search' onSubmit={ handleSubmit }>  
             <div className='container-searchBar'>
               <h3>Search Playlist</h3>
                <TextField
                     id="filled-search"
                     variant="filled"
-
+                    aria-Input="searchInput"
                     type="text"
                     name="query"
                     onChange={handleInput }
