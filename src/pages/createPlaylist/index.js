@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import SearchBar from "../../components/SearchBar/index.tsx";
 import Playlist from "../../components/Playlist";
-import PlaylistItem from "../../components/CreatePlaylist/index.js";
+import PlaylistItem from "../../components/createPlaylist/index.js";
 import { login } from '../../redux/authSlice';
 import { GetUserSpotify } from "../../auth/spotifyAPI";
 import { useDispatch } from "react-redux";
