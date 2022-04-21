@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginApp from './pages/Login';
-import CreatePlaylist from './pages/createPlaylist';
+import CreatePlaylist from './pages/createPlaylist/index';
 import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import './App.css'
