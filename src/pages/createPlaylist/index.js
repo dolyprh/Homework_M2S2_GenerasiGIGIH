@@ -5,6 +5,7 @@ import PlaylistItem from "../../components/CreatePlaylist/CreatePlaylist";
 import { login } from '../../redux/authSlice';
 import { GetUserSpotify } from "../../auth/spotifyAPI";
 import { useDispatch } from "react-redux";
+import './style.css';
 
 function CreatePlaylist() {
   const [tracks, setTracks] = useState([]);

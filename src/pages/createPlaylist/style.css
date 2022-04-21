@@ -6,3 +6,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
+.content-spotify{
+    display: flex;
+    justify-content: center;
+}
+
+.playlist-form{
+    float: right;
+}

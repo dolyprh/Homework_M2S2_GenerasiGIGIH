@@ -1,5 +1,4 @@
 import React from 'react';
-import SpotifyPages from './pages/home/home';
 import LoginApp from './pages/Login';
 import CreatePlaylist from './pages/createPlaylist';
 import { Redirect, BrowserRouter as Router, Switch, Route } from 'react-router-dom'

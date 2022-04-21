@@ -2,7 +2,7 @@
 - This App you can Search Track which you want
 - And also you can Create your track in your playlist
 
-<img src="">
+<img src="./public/spotify.png">
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
