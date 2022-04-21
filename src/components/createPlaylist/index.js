@@ -2,10 +2,9 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import { CreatePlaylist, addTrackToPlaylist } from "../../auth/spotifyAPI";
 import './style.css'
-import { Stack, Textfield } from "@mui/material";
 import React from 'react'
 
-export default function PlaylistItem({ uris }) {
+function PlaylistItem({ uris }) {
     
   const accessToken = useSelector((state) => state.auth.accessToken)
   const userId = useSelector((state) => state.auth.user.id)
@@ -78,3 +77,5 @@ export default function PlaylistItem({ uris }) {
     </div>
   )
 }
+
+export default PlaylistItem
